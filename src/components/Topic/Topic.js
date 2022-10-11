@@ -1,7 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Topic = ({ topic }) => {
-    console.log(topic);
+    // console.log(topic);
     const { name, logo, id } = topic;
     return (
         <div className='border-2 rounded-md border-white shadow-lg shadow-slate-300'>
@@ -10,7 +11,10 @@ const Topic = ({ topic }) => {
             </div>
             <div className='mt-5 mb-3 md:flex justify-between px-1'>
                 <p className='text-green-500 font-bold'>{name}</p>
-                <button className='py-1 px-3 rounded-md font-medium text-white bg-green-500 hover:bg-red-400'>Start Quiz</button>
+                <Link to={`/topics/${id}`}>
+                    <button className='py-1 px-3 rounded-md font-medium text-white bg-green-500 hover:bg-red-400'>Start Quiz</button>
+                </Link>
+
             </div>
 
         </div>

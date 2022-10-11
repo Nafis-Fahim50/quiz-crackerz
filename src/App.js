@@ -17,7 +17,17 @@ function App() {
           element:<Home></Home>
         },
         {
-          path: '/topics', element:<Topics></Topics>
+          path: '/home',
+          loader: ()=> fetch(`https://openapi.programming-hero.com/api/quiz`),
+          element:<Home></Home>
+        },
+        {
+          path: '/topics/:topicId',
+          loader: async({params}) =>{
+            // console.log(params);
+            return fetch(`https://openapi.programming-hero.com/api/quiz/${params.topicId}`)
+          },
+          element:<Topics></Topics>
         },
         {
           path: '/statistics', element:<Statistics></Statistics>
