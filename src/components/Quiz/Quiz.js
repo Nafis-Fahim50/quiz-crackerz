@@ -1,9 +1,7 @@
 import {EyeIcon } from '@heroicons/react/24/solid'
 
 const Quiz = ({ quiz }) => {
-    // console.log(quiz);
     const options = quiz.options;
-    // console.log(options);
     const { question,correctAnswer} = quiz;
 
     const handleToShowAnswer = (answer)=>{

@@ -4,7 +4,6 @@ import Topic from '../Topic/Topic';
 
 const Home = () => {
     const topics = useLoaderData().data;
-    // console.log(topics);
     return (
         <div className=''>
             <div className='grid md:grid-cols-2 lg:grid-cols-4 mt-12 gap-5'>
