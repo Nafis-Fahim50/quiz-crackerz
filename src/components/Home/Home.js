@@ -1,7 +1,6 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import Topic from '../Topic/Topic';
-import image from '../../image/quiz.jpeg'
 const Home = () => {
     const topics = useLoaderData().data;
     return (
