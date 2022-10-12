@@ -1,3 +1,19 @@
+# Project Info
+Project Name: React JS Quiz
+Live Website Link: https://react-js-quiz.netlify.app/
+
+# Project Details
+* Developed this project using React JS.
+* Using react route
+
+# Project Features
+* You can able to join 4 different courses course.
+* JS, CSS, React, Git
+* After finished quiz you can see your score
+* Alart wrong and right answer.
+* Show correct answer on eye-icon.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
