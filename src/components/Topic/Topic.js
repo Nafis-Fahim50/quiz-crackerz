@@ -10,7 +10,7 @@ const Topic = ({ topic }) => {
             </div>
             <div className='mt-5 mb-3 md:flex justify-between px-1'>
                 <p className='text-rose-500 font-bold'>{name}</p>
-                <Link to={`/topics/${id}`}>
+                <Link to={`/quiz/${id}`}>
                     <button className='py-1 px-3 rounded-md font-medium text-white bg-rose-500 hover:bg-green-400'>Start Quiz</button>
                 </Link>
 
