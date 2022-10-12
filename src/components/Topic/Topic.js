@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Topic = ({ topic }) => {
-    console.log(topic);
     const { name, logo, id, total } = topic;
     return (
         <div className='border-2 rounded-md border-white shadow-lg shadow-slate-300'>
